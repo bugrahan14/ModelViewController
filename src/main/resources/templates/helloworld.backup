@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <title>Thymeleaf Demo</title>
 
-
+    <link rel="stylesheet" th:href="@{/css/demo.css}"/>
 
 </head>
 <body>
-
-Hello World of Spring Buğrahan !
-<br><br>
-
-Student name: <span th:text="${param.studentName}" />
-
-
+<p th:text="'TIME ON THE SERVER IS BUGRAHAN ' + ${theDate}" class="funny"></p>
 </body>
 </html>
 
