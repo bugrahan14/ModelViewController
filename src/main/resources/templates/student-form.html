@@ -37,6 +37,42 @@
 
   </select>
 
+  <br><br>
+
+  Favorite Programming Language:
+
+  <input type="radio" th:field="*{favoriteLanguage}" 
+                      th:each="tempLang : ${languages}"
+                      th:value="${tempLang}"
+                      th:text="${tempLang}" />
+  
+
+  <!-- 
+  <input type="radio" th:field="*{favoriteLanguage}" th:value="Java" >Java</input>
+  <input type="radio" th:field="*{favoriteLanguage}" th:value="Python" >Python</input>
+  <input type="radio" th:field="*{favoriteLanguage}" th:value="JavaScript" >JavaScript</input>
+  -->
+
+  <br><br>
+
+
+  <input type="checkbox" th:field="*{favoriteOperatingSystems}" 
+                      th:each="tempOS : ${operatingSystems}"
+                      th:value="${tempOS}"
+                      th:text="${tempOS}" />  
+
+  <!--
+  <input type="checkbox" th:field="*{favoriteOperatingSystems}" th:value="Linux" >Linux</input>
+  <input type="checkbox" th:field="*{favoriteOperatingSystems}" th:value="'Mac OS'" >Mac OS</input>
+  <input type="checkbox" th:field="*{favoriteOperatingSystems}" th:value="'Microsft Windows'" >Windows</input>
+  <input type="checkbox" th:field="*{favoriteOperatingSystems}" th:value="'Ubuntu'" >Ubuntu</input>
+  <input type="checkbox" th:field="*{favoriteOperatingSystems}" th:value="'Debian'" >Debian</input>
+  -->
+
+
+
+
+
 
   <br><br>
 

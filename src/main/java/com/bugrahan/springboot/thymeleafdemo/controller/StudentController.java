@@ -16,6 +16,12 @@ public class StudentController {
     @Value("${countries}")
     private List<String> countries;
 
+    @Value("${languages}")
+    private List<String> languages;
+
+    @Value("${operatingSystems}")
+    private List<String> operatingSystems;
+
 
 
 
@@ -30,6 +36,12 @@ public class StudentController {
 
         // ADD MODEL İS COUNTRİES
         theModel.addAttribute("countries", countries);
+
+        // ADD MODEL İS LANGUAGES
+        theModel.addAttribute("languages", languages);
+
+        // ADD MODEL İS OPERATING SYSTEMS7
+        theModel.addAttribute("operatingSystems", operatingSystems);
 
         return "student-form";
     }
